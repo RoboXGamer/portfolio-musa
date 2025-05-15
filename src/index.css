@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+@layer components {
+    .sizeinc-1:hover {
+        transform: scale(1.025);
+        transition: ease-in-out;
+    }
+
+    .sizeinc-2:hover {
+        transform: scale(1.1);
+        transition: ease-in-out;
+    }
+
+    .sizeinc-3:hover {
+        transform: scale(1.05);
+        transition: ease-in-out;
+    }
+}

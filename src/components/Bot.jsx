@@ -1,0 +1,46 @@
+import React, { useState } from 'react'
+// 492077616e742061206769726c20696e206d79206c6966652c2077686f20686173207468652073616d65206c6576656c206f6620636861726d20617320416e696d65206769726c7321
+
+function Bot({ isVisible, setIsVisible }) {
+  const [isOpened, setIsOpened] = useState(false)
+  const [isClicked, setIsClicked] = useState(false)
+
+  const handleClick = () => {
+    setIsClicked(isClicked => !isClicked)
+    setIsVisible(isVisible => !isVisible)
+  }
+
+  const buffer = '492077616e742061206769726c20696e206d79206c6966652c2077686f20686173207468652073616d65206c6576656c206f6620636861726d20617320416e696d65206769726c7321'
+  const message = 'I want a girl in my life, who has the same level of charm as Anime girls!'
+
+
+  const card = (
+    <div className="fixed top-0 bottom-0 left-0 right-0 z-10 m-auto flex flex-col h-fit p-15 ">
+      <div className="fixed top-0 left-0 min-h-full min-w-full z-10 bg-black/75 blur-2xl  "></div>
+
+      <div className="p-1 z-20 border bg-black border-white/30 rounded-2xl ">
+        <div className=" bg-black opacity-75 p-5 z-30 border border-white/30 rounded-2xl  ">
+          <div className='text-wrap '>
+            <h1 className='text-2xl '>Hi I'm Musa...</h1>
+            <p className='break-all text-[8px] mt-1 '>{isClicked ? message : buffer}</p>
+          </div>
+          <button
+            onClick={() => handleClick()}
+            className="mt-3 p-2 text-sm font-semibold border border-white/30 rounded-xl ">Decode it?</button>
+        </div>
+      </div>
+    </div>
+
+  )
+
+  return (
+    <div className='fixed flex items-center justify-center left-5 bottom-5 h-10 w-10 z-50 rounded-full overflow-hidden bg-black border shadow-2xl font-mono '
+      onClick={() => setIsOpened(isOpened => !isOpened)}
+    >
+      <img src="/bot.png" />
+      {isOpened && card}
+    </div>
+  )
+}
+
+export default Bot
