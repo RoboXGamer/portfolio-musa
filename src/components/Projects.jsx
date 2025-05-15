@@ -10,19 +10,19 @@ function Projects() {
         )
     }
 
-    const container = () => {
+    const container = (title, discription, link) => {
         return (
             <div className="relative p-5 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all ease-in-out sizeinc-1 ">
-                <h4 className="text-xl ">Meaning Khoj</h4>
-                <p className="text-sm mt-3 text-white/50">A Chrome extension that helps users quickly find word definitions and translations while browsing.</p>
+                <h4 className="text-xl ">{title}</h4>
+                <p className="text-sm mt-3 text-white/50">{discription}</p>
                 <div className="flex flex-wrap gap-2 mt-3 ">
                     {btn("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", "React")}
                     {btn("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", "JavaScript")}
                     {btn("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg", "Chrome Extension")}
                 </div>
-                <a href='youtube.com'
+                <a href={link}
                  className="absolute top-0 right-0 flex items-center justify-center h-10 w-10 opacity-75 md:opacity-50 hover:opacity-100 ">
-                    <img src="/link-32.png" className=" invert h-5 " />
+                    <img src='link-32.png' className="invert h-5 " />
                 </a>
             </div>
         )
@@ -35,11 +35,11 @@ function Projects() {
                 Built some cool stuff that actually works fr.
             </p>
             <div className="grid md:grid-cols-2 md:mt-10 justify-center gap-5 mt-3 ">
+                {container('Employ Directory System','RESTful backend for an Employee Directory System with authentication, role-based access, employee management, search, filtering, and data export. Built using Node.js, Express.js, and MongoDB.' ,'https://github.com/Misa-De-Codes/Employee-Directory.git')}
+                {container('Tab Screen Time Recorder', '"Learn how Web Extensions are built from scratch with this beginner-friendly project. This basic app will guide you step by step, ensuring you grasp the fundamentals and gain hands-on experience. A perfect starting point to master Web Extensions!"', 'https://github.com/Misa-De-Codes/Web-Extension-Learning.git')}
+                {/* {container()}
                 {container()}
-                {container()}
-                {container()}
-                {container()}
-                {container()}
+                {container()} */}
             </div>
         </div>
     )
