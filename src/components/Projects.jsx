@@ -30,11 +30,11 @@ function Projects() {
 
     return (
         <div className='py-5 font-mono '>
-            <h1 className="text-2xl">Projects</h1>
-            <p className="text-xs mt-1 text-gray-600">
+            <h1 className="text-2xl md:text-4xl font-semibold ">Projects</h1>
+            <p className="text-xs md:text-xl md:mt-3 mt-1 text-gray-600">
                 Built some cool stuff that actually works fr.
             </p>
-            <div className="grid md:grid-cols-2 justify-center gap-5 mt-3 ">
+            <div className="grid md:grid-cols-2 md:mt-10 justify-center gap-5 mt-3 ">
                 {container()}
                 {container()}
                 {container()}

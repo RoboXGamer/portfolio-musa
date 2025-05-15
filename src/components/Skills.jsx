@@ -1,26 +1,26 @@
 import React from 'react'
 
 function Skills() {
-    const div = (img, link) => <a hrefLang={link} className="h-10 w-10 bg-white/10 rounded-xl p-2 hover:bg-white/20 transition-all ease-in-out sizeinc-2 ">{img}</a>
+    const div = (img, link) => <a hrefLang={link} className="h-10 w-10 md:w-15 md:h-15 bg-white/10 rounded-xl p-2 hover:bg-white/20 transition-all ease-in-out sizeinc-2 ">{img}</a>
 
 
     const li = (title, body) => {
         return (
-            <li className="">
-                <strong className='text-white/75 '>{title}</strong>
-                <span className='text-white/50 '>{body}</span>
+            <li className="mb-3 ">
+                <strong className='text-white/75 md:text-2xl '>{title}</strong>
+                <span className='text-white/50 md:text-2xl '>{body}</span>
             </li>
         )
     }
 
     return (
         <div className='py-5 font-mono '>
-            <h1 className="text-2xl">Skills & Expertise</h1>
+            <h1 className="text-2xl md:text-4xl font-semibold  ">Skills & Expertise</h1>
             {/* <p className="text-xs mt-1 text-gray-600">
                 Always learning, but these are my go-to tools!
             </p> */}
 
-            <ul className="mt-3 ">
+            <ul className="mt-3 md:mt-5">
                 {li('Languages- ', 'JavaScript, Python')}
                 {li('Frontend- ', 'React, TailwindCSS, Zustand, Redux-Toolkit, Framer Motion, WebRTC')}
                 {li('Backend- ', 'Node, Express, mongoose, JWT, Streams, REST')}
@@ -30,7 +30,7 @@ function Skills() {
 
             </ul>
 
-            <div className="flex flex-wrap gap-2 min-w-full mt-10 ">
+            <div className="flex flex-wrap gap-2 md:gap-5 min-w-full mt-10 ">
                 {div(<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />, "#")}
                 {div(<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" alt="Prisma" />, "#")}
                 {div(<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />, "#")}

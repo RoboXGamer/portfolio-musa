@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-// 492077616e742061206769726c20696e206d79206c6966652c2077686f20686173207468652073616d65206c6576656c206f6620636861726d20617320416e696d65206769726c7321
 
-function Bot({ isVisible, setIsVisible }) {
+
+function Bot({ setIsVisible }) {
   const [isOpened, setIsOpened] = useState(false)
   const [isClicked, setIsClicked] = useState(false)
 
@@ -15,18 +15,18 @@ function Bot({ isVisible, setIsVisible }) {
 
 
   const card = (
-    <div className="fixed top-0 bottom-0 left-0 right-0 z-10 m-auto flex flex-col h-fit p-15 ">
+    <div className="fixed top-0 bottom-0 left-0 right-0 z-10 m-auto flex flex-col h-fit p-15 max-w-[440px] md:max-w-[512px] ">
       <div className="fixed top-0 left-0 min-h-full min-w-full z-10 bg-black/75 blur-2xl  "></div>
 
       <div className="p-1 z-20 border bg-black border-white/30 rounded-2xl ">
         <div className=" bg-black opacity-75 p-5 z-30 border border-white/30 rounded-2xl  ">
           <div className='text-wrap '>
-            <h1 className='text-2xl '>Hi I'm Musa...</h1>
-            <p className='break-all text-[8px] mt-1 '>{isClicked ? message : buffer}</p>
+            <h1 className='text-2xl md:text-4xl '>Hi I'm Musa...</h1>
+            <p className='break-all text-[8px] md:text-xs mt-1 md:mt-3 '>{isClicked ? message : buffer}</p>
           </div>
           <button
             onClick={() => handleClick()}
-            className="mt-3 p-2 text-sm font-semibold border border-white/30 rounded-xl ">Decode it?</button>
+            className="mt-3 md:mt-5 p-2 text-sm font-semibold border border-red-500 text-red-500 md:text-white md:border-white/30 rounded-xl transition-all ease-in-out hover:border-red-500 hover:text-red-500 ">Decode it?</button>
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@ function Bot({ isVisible, setIsVisible }) {
   )
 
   return (
-    <div className='fixed flex items-center justify-center left-5 bottom-5 h-10 w-10 z-50 rounded-full overflow-hidden bg-black border shadow-2xl font-mono '
+    <div className='fixed flex items-center justify-center right-5 bottom-5 h-10 w-10 md:h-15 md:w-15 z-50 rounded-full overflow-hidden bg-black border shadow-2xl font-mono '
       onClick={() => setIsOpened(isOpened => !isOpened)}
     >
       <img src="/bot.png" />

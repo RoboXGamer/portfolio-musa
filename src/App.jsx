@@ -18,7 +18,7 @@ function App() {
         <Skills />
         <Projects />
         <Footer isVisible={isVisible} />
-        <Bot isVisible={isVisible} setIsVisible={setIsVisible} />
+        <Bot setIsVisible={setIsVisible} />
 
       </div>
     </>
