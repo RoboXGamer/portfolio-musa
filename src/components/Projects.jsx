@@ -12,7 +12,7 @@ function Projects() {
 
     const container = (title, discription, link) => {
         return (
-            <div className="relative p-5 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all ease-in-out sizeinc-1 ">
+            <div className="relative p-7 bg-white/5 border border-blue-600/50 rounded-2xl hover:bg-blue-600/15 transition-all ease-in-out sizeinc-1 ">
                 <h3 className="text-xl md:text-2xl">{title}</h3>
                 <h5 className="text-sm mt-3 text-white/50">{discription}</h5>
                 <div className="flex flex-wrap gap-2 mt-3 ">
@@ -30,7 +30,7 @@ function Projects() {
 
     return (
         <section className='py-5 font-mono '>
-            <h2 className="text-2xl md:text-4xl font-semibold ">Projects</h2>
+            <h2 className="text-2xl md:text-4xl font-semibold text-blue-600">Projects</h2>
             <h3 className="text-xs md:text-xl md:mt-3 mt-1 text-gray-600">
                 Built some cool stuff that actually works fr.
             </h3>

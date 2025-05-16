@@ -15,7 +15,7 @@ function Skills() {
 
     return (
         <section className='py-5 font-mono '>
-            <h2 className="text-2xl md:text-4xl font-semibold  ">Skills & Expertise</h2>
+            <h2 className="text-2xl md:text-4xl font-semibold text-blue-600 ">Skills & Expertise</h2>
             {/* <p className="text-xs mt-1 text-gray-600">
                 Always learning, but these are my go-to tools!
             </p> */}

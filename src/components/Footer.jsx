@@ -13,9 +13,9 @@ function Footer( {isVisible} ) {
 
     return (
         <footer className='flex flex-col items-center justify-center my-10 md:my-15 font-mono  '>
-            <div className="flex items-center justify-center px-3 py-2 md:px-5 md:py-3 bg-white/10 border border-white/15 rounded-2xl hover:bg-white/25 transition-all ease-in-out sizeinc-3 ">
+            <div className="flex items-center justify-center px-3 py-2 md:px-5 md:py-3 bg-white/10 border border-blue-600/50 rounded-2xl hover:bg-blue-600/25 transition-all ease-in-out sizeinc-3 ">
                 <h4 className='w-fit text-sm md:text-md text-white/75'>Feel free to checkout my </h4>
-                <a className='text-sm font-bold md:text-md text-blue-500  ' href='https://github.com/Misa-De-Codes'>&nbsp;resume</a>
+                <a className='text-sm font-bold md:text-md text-blue-600  ' href='https://github.com/Misa-De-Codes'>&nbsp;resume</a>
             </div>
             <div className="flex items-center justify-center gap-3 mt-10">
                 {icon('/links/instagram.png', 'https://www.instagram.com/MUSA_DE_CODES')}

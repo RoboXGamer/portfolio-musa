@@ -3,6 +3,8 @@ import Skills from "./components/Skills.jsx"
 import Footer from "./components/Footer.jsx"
 import Projects from "./components/Projects.jsx";
 import Bot from "./components/Bot.jsx";
+import MouseFollower from "./components/MouseFollower.jsx";
+import HiddenHero from './components/HiddenHero.jsx'
 import { useState } from "react";
 
 
@@ -13,7 +15,7 @@ function App() {
 
   return (
     <>
-      <Hero />
+      <HiddenHero />
       <main>
         <Skills />
         <Projects />
@@ -21,7 +23,7 @@ function App() {
 
       <Footer isVisible={isVisible} />
       <Bot setIsVisible={setIsVisible} />
-
+      <MouseFollower />
     </>
   )
 }
