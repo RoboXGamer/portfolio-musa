@@ -21,8 +21,8 @@ function Bot({ setIsVisible }) {
       <div className="p-1 z-20 border bg-black border-white/30 rounded-2xl ">
         <div className=" bg-black opacity-75 p-5 z-30 border border-white/30 rounded-2xl  ">
           <div className='text-wrap '>
-            <h1 className='text-2xl md:text-4xl '>Hi I'm Musa...</h1>
-            <p className='break-all text-[8px] md:text-xs mt-1 md:mt-3 '>{isClicked ? message : buffer}</p>
+            <h3 className='text-2xl md:text-4xl '>I I'm Susie...</h3>
+            <h5 className='break-all text-[8px] md:text-xs mt-1 md:mt-3 '>{isClicked ? message : buffer}</h5>
           </div>
           <button
             onClick={() => handleClick()}
@@ -37,7 +37,7 @@ function Bot({ setIsVisible }) {
     <div className='fixed flex items-center justify-center right-5 bottom-5 h-10 w-10 md:h-15 md:w-15 z-50 rounded-full overflow-hidden bg-black border shadow-2xl font-mono '
       onClick={() => setIsOpened(isOpened => !isOpened)}
     >
-      <img src="/bot.png" />
+      <img src="/images/bot.webp" />
       {isOpened && card}
     </div>
   )

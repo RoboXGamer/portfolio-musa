@@ -8,19 +8,20 @@ import { useState } from "react";
 
 function App() {
 
-  const [ isVisible, setIsVisible ] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
 
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen max-w-[48rem] p-5 text-white">
-        <Hero />
+      <Hero />
+      <main>
         <Skills />
         <Projects />
-        <Footer isVisible={isVisible} />
-        <Bot setIsVisible={setIsVisible} />
+      </main>
 
-      </div>
+      <Footer isVisible={isVisible} />
+      <Bot setIsVisible={setIsVisible} />
+
     </>
   )
 }

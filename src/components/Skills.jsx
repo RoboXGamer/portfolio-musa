@@ -14,8 +14,8 @@ function Skills() {
     }
 
     return (
-        <div className='py-5 font-mono '>
-            <h1 className="text-2xl md:text-4xl font-semibold  ">Skills & Expertise</h1>
+        <section className='py-5 font-mono '>
+            <h2 className="text-2xl md:text-4xl font-semibold  ">Skills & Expertise</h2>
             {/* <p className="text-xs mt-1 text-gray-600">
                 Always learning, but these are my go-to tools!
             </p> */}
@@ -69,7 +69,7 @@ function Skills() {
                 {div(<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" alt="Heroku" />, "#")}
                 {div(<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" />, "#")}
             </div>
-        </div>
+        </section>
     )
 }
 
