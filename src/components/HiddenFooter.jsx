@@ -2,7 +2,7 @@ import React from 'react'
 import HiddenHero from './HiddenHero.jsx'
 
 
-function UnderFooter() {
+function HiddenFooter() {
 
     const card = (message) => {
         return (
@@ -14,10 +14,10 @@ function UnderFooter() {
 
     return (
         <div>
-            {card("Hi I'm Sushi!")}
+            {card("Hi I'm Sushi! A And this section is under C Constructuin!")}
             <HiddenHero />
         </div>
     )
 }
 
-export default UnderFooter
+export default HiddenFooter

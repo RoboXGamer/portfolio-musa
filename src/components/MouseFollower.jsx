@@ -54,13 +54,10 @@ function MouseFollower() {
 
   return (
     <div
+    className="h-20 w-20 blur-2xl bg-blue-600 "
       ref={followerRef}
       style={{
         position: "fixed",
-        width: "20px",
-        height: "20px",
-        border: "solid 1px rgba(255, 255, 255, 0.5) ",
-        backgroundColor: "rgba(0, 0, 255, 0.5)",
         borderRadius: "50%",
         pointerEvents: "none",
         transform: "translate(-50%, -50%)",

@@ -1,5 +1,5 @@
 import React from 'react'
-import UnderFooter from "./UnderFooter.jsx";
+import UnderFooter from "./HiddenFooter.jsx";
 
 
 

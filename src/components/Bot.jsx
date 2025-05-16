@@ -34,7 +34,7 @@ function Bot({ setIsVisible }) {
   )
 
   return (
-    <div className='fixed flex items-center justify-center right-5 bottom-5 h-10 w-10 md:h-15 md:w-15 z-50 rounded-full overflow-hidden bg-black border shadow-2xl font-mono '
+    <div className='fixed flex items-center justify-center right-5 bottom-5 h-10 w-10 md:h-15 md:w-15 z-50 rounded-full overflow-hidden bg-black border-2 border-blue-600 shadow-2xl font-mono '
       onClick={() => setIsOpened(isOpened => !isOpened)}
     >
       <img src="/images/bot.webp" />
