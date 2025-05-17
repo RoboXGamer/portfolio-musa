@@ -6,6 +6,7 @@ import MouseFollower from "./components/MouseFollower.jsx";
 import { useState } from "react";
 import Img from './components/Img.jsx'
 import Bubbles from './components/Bubbles.jsx'
+import Hero from "./components/Hero.jsx";
 function App() {
 
   const [isVisible, setIsVisible] = useState(false)
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <main>
+        <Hero />
         <Skills />
         <Projects />
       </main>
