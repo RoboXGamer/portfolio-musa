@@ -1,10 +1,25 @@
 import React, { useRef } from "react"
 
 function Hero() {
-    const a = (text = '') => {
-        
-        return <a href="" className="px-3 md:px-5 py-1 md:py-2 border border-blue-600/50 rounded-2xl hover:bg-blue-600/25 transition-all ease-in-out sizeinc-1 ">{text}</a>
+
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const a = (text = '', sectionId = '') => {
+        return (
+            <button
+                onClick={() => scrollToSection(sectionId)}
+                className="px-3 md:px-5 py-1 md:py-2 border border-blue-600/50 rounded-2xl hover:bg-blue-600/25 transition-all ease-in-out sizeinc-1"
+            >
+                {text}
+            </button>
+        );
     }
+
     const li = (text = '') => <li className="mb-3 text-white/50 md:text-2xl">{text}</li>
 
     return (
@@ -13,9 +28,9 @@ function Hero() {
 
                 <h1 className="text-4xl font-black md:text-6xl text-blue-600 ">Musa-De-Codes</h1>
                 <div className="flex w-full gap-2 md:gap-5 ">
-                    {a('Skills')}
-                    {a('Projoects')}
-                    {a('More')}
+                    {a('Skills', 'skills')}
+                    {a('Projects', 'projects')}
+                    {a('More', 'more')}
                 </div>
                 <ul className="list-inside list-decimal ">
                     {li('A self-taught developer who loves to learn new things.')}

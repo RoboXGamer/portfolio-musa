@@ -29,7 +29,7 @@ function Projects() {
     }
 
     return (
-        <section className='py-5 font-mono '>
+        <section id='projects' className='py-5 font-mono '>
             <h2 className="text-2xl md:text-4xl font-semibold text-blue-600">Projects</h2>
             <h3 className="text-xs md:text-xl md:mt-3 mt-1 text-gray-600">
                 Built some cool stuff that actually works fr.
@@ -55,7 +55,7 @@ function Projects() {
                     'https://github.com/Misa-De-Codes/Susie-Chan.git'
                 )}
             </div>
-            <section className=" ">
+            <section id='more' className=" ">
                 <h3 className="text-2xl md:text-4xl text-blue-600 font-bold mt-5  ">Hey there :D</h3>
                 <p className="text-sm md:text-xl mt-3 text-white/50  ">
                     <span className="inline ">
