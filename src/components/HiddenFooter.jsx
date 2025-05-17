@@ -14,7 +14,7 @@ function HiddenFooter() {
 
     return (
         <div>
-            {card("Hi I'm Sushi! A And this section is under C Constructuin!")}
+            {card("Hi I'm Susie! A And this section is under C Constructuin!")}
             <HiddenHero />
         </div>
     )

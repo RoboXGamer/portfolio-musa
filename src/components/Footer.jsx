@@ -6,7 +6,7 @@ import UnderFooter from "./HiddenFooter.jsx";
 function Footer( {isVisible} ) {
     const icon = (png, url) => {
         return <a href={url} className="p">
-            <img src={png} className="h-8 invert " />
+            <img src={`/links/${png}`} className="h-8 invert " />
         </a>
     }
 
@@ -18,10 +18,10 @@ function Footer( {isVisible} ) {
                 <a className='text-sm font-bold md:text-md text-blue-600  ' href='https://github.com/Misa-De-Codes'>&nbsp;resume</a>
             </div>
             <div className="flex items-center justify-center gap-3 mt-10">
-                {icon('/links/instagram.png', 'https://www.instagram.com/MUSA_DE_CODES')}
-                {icon('/links/discord.svg', 'https://discord.com/channels/@musa_de_codes')}
-                {icon('/links/linkedin.svg', 'https://www.linkedin.com/in/musaddikul-islam-a70459360')}
-                {icon('/links/twitter.svg', 'https://x.com/Musa_De_codes')}
+                {icon('instagram.png', 'https://www.instagram.com/MUSA_DE_CODES')}
+                {icon('discord.svg', 'https://discord.com/channels/@musa_de_codes')}
+                {icon('linkedin.svg', 'https://www.linkedin.com/in/musaddikul-islam-a70459360')}
+                {icon('twitter.svg', 'https://x.com/Musa_De_codes')}
             </div>
             <p className="text-xs mt-5 text-white/50 text-center ">© 2025 Musa-De-Codes. All rights reserved.</p>
             <div className={isVisible? 'block' : 'hidden' }>

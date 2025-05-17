@@ -3,7 +3,7 @@ import React from 'react'
 function Projects() {
     const button = (img, text) => {
         return (
-            <button className="flex items-center gap-1 border border-white/15 rounded-md py-2 px-2">
+            <button className="flex hidden items-center gap-1 border border-white/15 rounded-md py-2 px-2">
                 <img src={img} className="h-5 w-5" />
                 <h4 className="text-xs text-white/50">{text}</h4>
             </button>
@@ -35,11 +35,25 @@ function Projects() {
                 Built some cool stuff that actually works fr.
             </h3>
             <div className="grid md:grid-cols-2 md:mt-10 justify-center gap-5 mt-3 ">
-                {container('Employ Directory System', 'RESTful backend for an Employee Directory System with authentication, role-based access, employee management, search, filtering, and data export. Built using Node.js, Express.js, and MongoDB.', 'https://github.com/Misa-De-Codes/Employee-Directory.git')}
-                {container('Tab Screen Time Recorder', '"Learn how Web Extensions are built from scratch with this beginner-friendly project. This basic app will guide you step by step, ensuring you grasp the fundamentals and gain hands-on experience. A perfect starting point to master Web Extensions!"', 'https://github.com/Misa-De-Codes/Web-Extension-Learning.git')}
-                {/* {container()}
-                {container()}
-                {container()} */}
+                {container(
+                    'Employee Hub',
+                    'Backend of employee management system with role-based access and data export features. Built with Node.js and MongoDB.',
+                    'https://github.com/Misa-De-Codes/Employee-Directory.git'
+                )}
+                {container(
+                    'Tab Timer',
+                    'A Chrome extension that tracks and visualizes your browsing time. Perfect first project to learn browser extension development.',
+                    'https://github.com/Misa-De-Codes/Web-Extension-Learning.git'
+                )}
+                {container('AniRateMi',
+                    'Modern anime discovery platform with community ratings and reviews. Built with React and Node.js, featuring real-time updates and a clean UI.',
+                    'https://aniratemi.netlify.app/'
+                )}
+                {container(
+                    'Susie Chan',
+                    'Discord bot that delivers curated anime waifu images on demand. Features customizable feeds and interactive commands for server engagement.',
+                    'https://github.com/Misa-De-Codes/Susie-Chan.git'
+                )}
             </div>
             <section className=" ">
                 <h3 className="text-2xl md:text-4xl text-blue-600 font-bold mt-5  ">Hey there :D</h3>
