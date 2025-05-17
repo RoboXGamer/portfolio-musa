@@ -45,7 +45,7 @@ function Skills() {
                 {div('git.svg')}
                 {div('discord.svg')}
             </div>
-            <img src='https://count.getloli.com/@Misa-De-Codes' className="my-15 md:my-30 w-full cursor-none select-none" />
+            <img src='https://count.getloli.com/@Misa-De-Codes' className="md:hidden my-15 md:my-30 w-full cursor-none select-none" />
         </section>
     )
 }
