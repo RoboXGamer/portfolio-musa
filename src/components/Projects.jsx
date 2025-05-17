@@ -30,7 +30,7 @@ function Projects() {
 
     return (
         <section id='projects' className='py-5 font-mono '>
-            <h2 className="text-2xl md:text-4xl font-semibold text-blue-600">Projects</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-blue-600">Projects</h2>
             <h3 className="text-xs md:text-xl md:mt-3 mt-1 text-gray-600">
                 Built some cool stuff that actually works fr.
             </h3>

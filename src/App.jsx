@@ -21,7 +21,6 @@ function App() {
       <Bot setIsVisible={setIsVisible} />
       <MouseFollower />
       <Img />
-      <Bubbles />
     </>
   )
 }
