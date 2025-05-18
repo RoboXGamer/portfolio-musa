@@ -13,23 +13,12 @@
   <img src="https://leetcode-stats.vercel.app/api?username=Misa_De_Codes&theme=dark" alt="Top Languages" />
 </div>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/addynoven/addynoven/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/addynoven/addynoven/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/Misa-De-Codes/Misa-De-Codes/output/github-snake.svg" />
+</picture>
 
-## 🔗 Connect with Me
-
-<div align="left">
-  <a href="https://www.instagram.com/MUSA_DE_CODES" target="_blank">
-    <img src="https://img.icons8.com/?size=100&id=nj0Uj45LGUYh&format=png&color=000000" alt="Instagram" height="30" />
-  </a>
-  <a href="https://discord.com/channels/@musa_de_codes" target="_blank">
-    <img src="https://img.icons8.com/?size=100&id=M725CLW4L7wE&format=png&color=000000" alt="Discord" height="30" />
-  </a>
-  <a href="https://www.linkedin.com/in/musaddikul-islam-a70459360" target="_blank">
-    <img src="https://img.icons8.com/?size=100&id=114445&format=png&color=000000" alt="LinkedIn" height="30" />
-  </a>
-  <a href="https://x.com/Musa_De_codes" target="_blank">
-    <img src="https://img.icons8.com/?size=100&id=5MQ0gPAYYx7a&format=png&color=000000" alt="Twitter" height="30" />
-  </a>
-</div>
 
 ---
 
@@ -71,3 +60,22 @@
 </div>
 
 <p align="center">Thanks for visiting! Let's build something great together.</p>
+
+
+## 🔗 Connect with Me
+
+<div align="left">
+  <a href="https://www.instagram.com/MUSA_DE_CODES" target="_blank">
+    <img src="https://img.icons8.com/?size=100&id=nj0Uj45LGUYh&format=png&color=000000" alt="Instagram" height="30" />
+  </a>
+  <a href="https://discord.com/channels/@musa_de_codes" target="_blank">
+    <img src="https://img.icons8.com/?size=100&id=M725CLW4L7wE&format=png&color=000000" alt="Discord" height="30" />
+  </a>
+  <a href="https://www.linkedin.com/in/musaddikul-islam-a70459360" target="_blank">
+    <img src="https://img.icons8.com/?size=100&id=114445&format=png&color=000000" alt="LinkedIn" height="30" />
+  </a>
+  <a href="https://x.com/Musa_De_codes" target="_blank">
+    <img src="https://img.icons8.com/?size=100&id=5MQ0gPAYYx7a&format=png&color=000000" alt="Twitter" height="30" />
+  </a>
+</div>
+
