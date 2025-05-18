@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 function MouseFollower() {
   const followerRef = useRef(null);
@@ -54,7 +54,7 @@ function MouseFollower() {
 
   return (
     <div
-    className="h-20 w-20 blur-2xl bg-blue-600 "
+      className="h-20 w-20 blur-2xl bg-blue-600 "
       ref={followerRef}
       style={{
         position: "fixed",
