@@ -3,6 +3,7 @@
 <!--  <img src="https://i.imgur.com/KXx0cCx.gif" width="100%" height="100%" alt="decorative anime" />## 📊 GitHub Insights -->
 </div>
 
+---
 
 
 
